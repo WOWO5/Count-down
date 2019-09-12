@@ -1,0 +1,133 @@
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    margin: 0;
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banner-container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.banner-box {
+    color: #fff;
+    width: 350px;
+    height: 150px;
+    margin-top: 470px;
+    padding: 10px 10px 30px;
+    float: right;
+    overflow: auto;
+    clear: both;
+    background-image: -webkit-linear-gradient( to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+.paragraph {
+    background-color: #ddd;
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.paragraph3 {
+    background-color: #ddd;
+    float: left;
+    overflow: hidden;
+}
+
+.paragraph2 {
+    background-color: #ddd;
+    float: left;
+    right: 320px;
+}
+
+.paragraph1 {
+    background-color: #ddd;
+    float: left;
+    right: 320px;
+}
+
+.part1 {
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    float: left;
+    padding-top: 10px;
+    margin: 10px 5px 0 0;
+}
+
+.part2 {
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    float: left;
+    padding-top: 10px;
+    margin: 10px 5px 0 0;
+}
+
+.part3 {
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    float: left;
+    padding-top: 10px;
+    margin: 10px 5px 0 0;
+}
+
+.paragraph-img {
+    text-align: center;
+}
+
+.paragraph-text {
+    padding: 15px 30px 25px;
+    font-size: 12px;
+    line-height: 170%;
+    text-indent: 2em;
+}
+
+.introduction {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    clear: left;
+}
+
+.portrait {
+    background-color: #ddd;
+    width: 160px;
+    height: 160px;
+    left: 50%;
+    margin: 0 auto;
+}
+
+.introduction-title {
+    font-size: 20px;
+    font-family: "Century Gothic";
+    text-align: center;
+}
+
+.text-text {
+    width: 600px;
+    font-size: 14px;
+    text-indent: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
