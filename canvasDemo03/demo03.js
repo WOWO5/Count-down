@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-31 15:59:55
- * @LastEditTime: 2020-09-01 10:24:57
+ * @LastEditTime: 2020-09-01 11:02:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Count-down\canvasDemo03\demo03.js
@@ -55,11 +55,10 @@ function drawStar(cxt, r, R, x, y, rot) {
   cxt.lineWidth = 1;
   cxt.strokeStyle = "#fd5";
   cxt.fillStyle = "#fb3";
-  console.log("true");
   cxt.fill();
   cxt.stroke();
 }
-
+//*绘制一个标准五角星
 function aStar(cxt) {
   cxt.beginPath();
   for (var i = 0; i < 5; i++) {
@@ -68,10 +67,27 @@ function aStar(cxt) {
       -Math.sin(((18 + i * 72) / 180) * Math.PI)
     );
     cxt.lineTo(
-      Math.cos(((54 + i * 72) / 180) * Math.PI),
-      -Math.sin(((54 + i * 72) / 180) * Math.PI)
+      Math.cos(((54 + i * 72) / 180) * Math.PI) * 0.5,
+      -Math.sin(((54 + i * 72) / 180) * Math.PI) * 0.5
     );
   }
   cxt.closePath();
-  cxt.stroke();
 }
+
+function drawAStar(cxt, x, y, R, rot) {
+  cxt.save();
+  cxt.translate(x, y);
+  cxt.rotate((rot / 180) * Math.PI);
+  cxt.scale(R, R);
+  aStar(cxt);
+
+  cxt.fillStyle = "#324";
+  cxt.strokeStyle = "#514";
+  cxt.lineWidth = 3;
+
+  cxt.fill();
+  cxt.stroke();
+  cxt.restore();
+}
+
+drawAStar(context, 100, 100, 5, 0);
