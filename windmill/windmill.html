@@ -1,0 +1,103 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-09-16 19:56:11
+ * @LastEditTime: 2020-09-17 18:58:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \Count-down\home-page\test\testit.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小风车</title>
+  <style>
+    #windmill {
+      width: 160px;
+      height: 160px;
+      position: relative;
+      -ms-transition: -webkit-transform 20s ease-in-out;
+      -moz-transition: -webkit-transform 20s ease-in-out;
+      -webkit-transition: -webkit-transform 30s ease-in-out;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+    }
+
+    #windmill:hover {
+      -webkit-transform: rotate(-10000deg);
+      -ms-transform: rotate(1960deg);
+      -moz-transform: rotate(1960deg);
+    }
+
+    #windmill div {
+      background-color: burlywood;
+    }
+
+    #windmill .top {
+      width: 40px;
+      height: 80px;
+      left: 40px;
+      top: 0px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+    }
+
+    #windmill .right {
+      width: 80px;
+      height: 40px;
+      left: 80px;
+      top: 40px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+    }
+
+    #windmill .bottom {
+      width: 40px;
+      height: 80px;
+      left: 80px;
+      top: 80px;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    #windmill .left {
+      width: 80px;
+      height: 40px;
+      left: 0px;
+      top: 80px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    .alaIn {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.7);
+      -webkit-transition: border-box;
+      -ms-transition: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-transition: background-color 1s linear;
+      -ms-transition: background-color 1s linear;
+      -moz-transition: background-color 1s linear;
+      left: 0;
+      top: 0;
+    }
+
+    .alaIn:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="windmill">
+    <div class="top alaIn"></div>
+    <div class="right alaIn"></div>
+    <div class="bottom alaIn"></div>
+    <div class="left alaIn"></div>
+  </div>
+</body>
+
+</html>
