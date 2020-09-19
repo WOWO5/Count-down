@@ -15,6 +15,10 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /**导航栏设置*/
 
 .headitem {
@@ -41,10 +45,6 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
 }
 
 /**主页面板设置*/
@@ -112,4 +112,31 @@ li a:hover {
   position: absolute;
   left: 16px;
   top: 16px;
+}
+
+.join-us {
+  width: 20vh;
+  height: 5vh;
+  text-align: center;
+  font-size: 30px;
+  color: antiquewhite;
+  justify-content: center;
+  position: absolute;
+  top: 61vh;
+  left: 20vh;
+}
+
+.more-history {
+  width: 20vh;
+  height: 5vh;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 74vh;
+  left: 20vh;
+}
+
+.first-page a {
+  color: antiquewhite;
 }
