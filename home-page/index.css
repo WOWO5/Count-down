@@ -27,12 +27,25 @@ a {
   height: 10vh;
   justify-content: space-around;
   align-items: center;
-  font-size: large;
+  font-size: 20px;
+  transition: 0.7s ease-in;
+}
+
+.headitem:hover {
+  background-color: azure;
+}
+
+.headitem div {
+  width: 200px;
+  height: 100%;
+  display: flex;
 }
 
 .headitem img {
-  width: 5%;
-  height: 70%;
+  width: 70px;
+  height: 55px;
+  padding-left: 55px;
+  padding-top: 1vh;
 }
 
 li {
@@ -91,21 +104,21 @@ li a {
 .set-img {
   position: absolute;
   top: 24vh;
-  left: 60vh;
+  left: 65vh;
   width: 128px;
   height: 128px;
-  -ms-transition: -webkit-transform 50s ease-in-out;
-  -moz-transition: -webkit-transform 50s ease-in-out;
+  /* -ms-transition: -ms-transform 50s ease-in-out;
+  -moz-transition: -moz-transform 50s ease-in-out;
   -webkit-transition: -webkit-transform 50s ease-in-out;
   -ms-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg); */
 }
 
 .set-img:hover {
-  -ms-transform: rotate(9000deg);
+  /* -ms-transform: rotate(9000deg);
   -moz-transform: rotate(9000deg);
-  -webkit-transform: rotate(9000deg);
+  -webkit-transform: rotate(9000deg); */
 }
 
 .img7 {
@@ -114,27 +127,27 @@ li a {
   top: 16px;
 }
 
-.join-us {
+.fonts a {
   width: 20vh;
-  height: 5vh;
+  height: 6vh;
+  left: 22vh;
+  position: absolute;
   text-align: center;
   font-size: 30px;
   color: antiquewhite;
-  justify-content: center;
-  position: absolute;
-  top: 61vh;
-  left: 20vh;
+  transition: 0.7s ease-in;
+  border-radius: 40px;
 }
 
-.more-history {
-  width: 20vh;
-  height: 5vh;
-  color: antiquewhite;
-  text-align: center;
-  font-size: 30px;
-  position: absolute;
+.fonts a:hover {
+  background-color: azure;
+  color: black;
+}
+.join-us a {
+  top: 61vh;
+}
+.more-history a {
   top: 74vh;
-  left: 20vh;
 }
 
 .first-page a {
